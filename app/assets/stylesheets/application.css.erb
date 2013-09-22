@@ -1,0 +1,181 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require fancybox
+ *= require_tree .
+ */
+
+body {
+  padding-top:0px;
+  color: #333333;
+  line-height: 0px;
+}
+
+
+#logo {
+    background: url(<%= asset_path 'hp_logo.png'%>) no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    padding: 0;
+    height: 82px;
+    width: 418px;
+    margin-left: 62px;
+}
+
+#page-header {
+    overflow: auto;
+    padding: 0 24 26px;
+    width: 93%;
+    background-color: #F5F5F5;
+    padding-left: 87px;
+    padding-top: 24px;
+    padding-bottom: 19px;
+}
+
+
+#login {
+    float: right;
+    height: 30px;
+    margin-right: 200px;
+    margin-top: 35px;
+    overflow: auto;
+}
+
+a#btn-login.btn-light img {
+    background: url(<%=asset_path 'loginButton.gif' %>) no-repeat scroll 0 -22px transparent;
+    height: 22px;
+    width: 80px;
+}
+#footer_css
+{
+padding-bottom:1px;
+}
+
+#footer-site-links {
+         padding: 31px 323px 12px;
+}
+
+#footer_background {
+    background-color: #F4F4F4;
+    border-top: 1px solid #D7D7D7;
+    height:50px;
+    margin-top: 336px;
+    padding-bottom: 67px;
+}
+
+
+a {
+    text-decoration: underline;
+
+}
+.footer-company-name {
+    padding: 10px 360px 0;
+}
+
+a.footer-link {
+
+    color: #0088CC;
+    text-decoration: -moz-anchor-decoration;
+}
+
+
+#hp-slideshow h1 {
+    color: #2C9F3C;
+    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0 0 4px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#headline_title {
+    color: #333333;
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0 0 18px;
+    text-align: center;
+    padding-top:20px;
+}
+
+#hp-reg {
+    background-color: #FFFFFF;
+    border: 3px solid #DBDBDB;
+    float: right;
+    margin-bottom: 18px;
+    margin-right: 10px;
+    padding: 15px 12px 20px;
+    width: 276px;
+}
+
+a#newClickLink img {
+    background: url(<%= asset_path "home_facebook_button.gif" %>) no-repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 45px;
+    width: 263px;
+}
+
+
+#facebook_note {
+    border-bottom: 1px solid #D7D7D7;
+    color: #333333;
+    margin: 10px auto 0;
+    padding-bottom: 20px;
+    width: 240px;
+}
+
+#or {
+    height: 23px;
+    margin-top: -8px;
+}
+
+
+#click_here {
+    font-family: arial;
+    font-size: 17px;
+    margin-bottom: 16px;
+    margin-top: 3px;
+    margin-left: 25px;
+}
+
+#click_here a {
+    color: #1386C1;
+    text-decoration: none;
+}
+
+#click_here a:hover {
+    color: #1386C1;
+    text-decoration: underline;
+}
+
+#reg-privacy {
+    margin-left: 12px;
+    margin-top: -15px;
+    padding-top: 18px;
+    width: 250px;
+}
+
+#or span {
+    background-color: #FFFFFF;
+    color: #333333;
+    display: block;
+    font-size: 14px;
+    margin: 0 auto;
+    width: 48px;
+}
+
+
+#hp-reg .form-small-print {
+    clear: both;
+    color: #959595;
+    font-size: 11px;
+    text-align: center;
+}
