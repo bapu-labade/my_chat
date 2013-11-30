@@ -5,7 +5,7 @@
       <div>
         <%= f.label :email %>
         <%= f.email_field :email, :autofocus => true %>
-      </div>
+      </div><br/>
     <div><%= f.submit "Send email" %></div>
   <% end %>
 </div>
