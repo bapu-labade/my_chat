@@ -12,14 +12,16 @@
   <div><%= f.label :password_confirmation %>
   <%= f.password_field :password_confirmation %></div>
   
-  <div><%= f.label :country %>
-  <%= f.select :country, options_for_select(["India"]) %></div>
+  <div>
+   <%= f.label :country %>
+   <%= f.select :country, options_for_select(@country.collect(&:name)) %>
+  </div>
   
   <div><%= f.label :state %>
-  <%= f.select :state, options_for_select(["Mh"]) %></div>
+  <%= f.select :state, options_for_select(@state) %></div>
   
   <div><%= f.label :city %>
-  <%= f.select :city, options_for_select(["Pune"]) %></div>
+  <%= f.select :city, options_for_select(@city) %></div>
 
   <div><%= f.label :phone %>
   <%= f.text_field :phone %></div>

@@ -1,7 +1,15 @@
 Openfire::Application.routes.draw do
+
+  
+  get 'get_state', to: 'profiles#get_state'
+
+  resources :profiles do
+  end
+
   devise_for :users
 
   get 'show',:to=>"home#show"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

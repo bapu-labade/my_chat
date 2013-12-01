@@ -1,0 +1,13 @@
+$(document).ready(function(){
+ $("#user_country").change(function(){
+  $.ajax({
+    url: "/get_state",
+    data: {
+     name: $("#user_country").val()
+    },
+    success: function( data ) {
+     alert(data);
+   }
+  });
+ });
+});

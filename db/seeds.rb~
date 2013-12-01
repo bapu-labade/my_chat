@@ -6,4 +6,12 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Country.create(name: "India")
+cntry = Country.first_or_create!(name: "India")
+states = [{ name: 'Maharasthra'},{ name: 'Karnatka'}]
+states.each do |st|
+  binding.pry
+  cntry.states.first_or_create!(st)
+end
+
+
+
