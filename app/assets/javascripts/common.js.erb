@@ -6,7 +6,7 @@ $(document).ready(function(){
      name: $("#user_country").val()
     },
     success: function( data ) {
-     $("#user_state").html(<%= options_for_select(data) %>)
+     $("#user_state").html(<%#= options_for_select(data) %>)
    }
   });
  });
